@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'whoami'
+                sh 'echo hola jesus'
             }
         }
     }
