@@ -8,7 +8,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'scp testing jesus@192.168.6.22:/tmp/testing.exe'
+                sh 'chmod +x testing'
+                sh 'scp -i /home/jenkins/.ssh/id_rsa testing jesus@192.168.6.22:/tmp/testing.exe'
             }
         }
     }
