@@ -6,5 +6,10 @@ pipeline {
                 sh 'gcc ./src/main.c -o testing'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'whoami'
+            }
+        }
     }
 }
