@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo holdddda jesus'
+                sh 'echo admin jesus'
             }
         }
     }
