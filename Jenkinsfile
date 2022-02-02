@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo admin jesus'
+                sh 'scp testing jesus@192.168.6.22:/tmp/testing.exe'
             }
         }
     }
